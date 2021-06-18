@@ -1,5 +1,8 @@
 <?php
 
+namespace App\Services;
+
+use App\Interfaces\PropertyContainerNumbersInterface;
 
 class PropertyContainerNumbersService implements PropertyContainerNumbersInterface
 {
@@ -11,7 +14,7 @@ class PropertyContainerNumbersService implements PropertyContainerNumbersInterfa
         $this->numbers[] = $value;
     }
 
-    public function read($id): array
+    public function read($id): string
     {
         return $this->numbers[$id];
     }

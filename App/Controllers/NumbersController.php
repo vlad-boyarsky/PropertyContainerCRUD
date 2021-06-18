@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Interfaces\PropertyContainerNumbersInterface;
+
 class NumbersController
 {
     protected PropertyContainerNumbersInterface $propertyContainerNumbers;
@@ -14,9 +18,9 @@ class NumbersController
         $this->propertyContainerNumbers->create($value);
     }
 
-    public function read($id): void
+    public function read($id): string
     {
-        $this->propertyContainerNumbers->read($id);
+        return $this->propertyContainerNumbers->read($id);
     }
 
     public function update($id, $value): void
