@@ -16,6 +16,9 @@ class PropertyContainerNumbersService implements PropertyContainerNumbersInterfa
 
     public function read($id): string
     {
+        if (empty($this->numbers)) {
+            return 'Empty numbers database';
+        }
         return $this->numbers[$id];
     }
 
