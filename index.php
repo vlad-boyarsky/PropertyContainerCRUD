@@ -14,4 +14,6 @@ $numbersController->create('+7-333-444-3');
 
 $numbersController->update(0, '+380 067 556 1');
 
+$numbersController->delete(0);
+
 echo $numbersController->read(0);
