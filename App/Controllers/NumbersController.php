@@ -6,6 +6,7 @@ use App\Interfaces\PropertyContainerNumbersInterface;
 
 class NumbersController
 {
+
     protected PropertyContainerNumbersInterface $propertyContainerNumbers;
 
     public function __construct(PropertyContainerNumbersInterface $propertyContainerNumbers)

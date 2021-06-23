@@ -18,4 +18,4 @@ $numbersController->update(0, '+380 067 556 1');
 $numbersController->delete(1);
 
 echo $numbersController->read(0) . '</br>';
-echo $numbersController->read(1);
+echo $numbersController->read(1) . '</hr>';

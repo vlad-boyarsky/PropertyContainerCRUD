@@ -4,6 +4,7 @@ namespace App\Interfaces;
 
 interface PropertyContainerNumbersInterface
 {
+
     public function create(string $value): void;
 
     public function read(int $id): string;
